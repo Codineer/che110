@@ -1,6 +1,7 @@
 
 import { HeroSectionHome } from "@/components/heroSectionhome";
 import { ImpactSectionHome } from "@/components/ImpactSectionHome";
+
 export default function Home() {
   return (
     <div>
@@ -12,6 +13,7 @@ export default function Home() {
 
 
         </ImpactSectionHome>
+
       </div>
     </div>
   );
