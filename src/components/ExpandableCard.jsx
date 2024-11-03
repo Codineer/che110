@@ -6,7 +6,7 @@ export function AnimatedPinDemo() {
     return (
         (<div className="pt-9 p-10 w-full flex items-center justify-center flex-wrap gap-10 gap-y-24 mb-8   ">
             {
-                naturalDisasters.map((disaster) => <PinContainer title={disaster.tags[1]} href={'/threats'}>
+                naturalDisasters.map((disaster, index) => <PinContainer key={index} title={disaster.tags[1]} href={'/threats'}>
                     <div
                         className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
                         <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
