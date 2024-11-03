@@ -1,16 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 const Navbar = () => {
     return (
         <div className='fixed top-0 w-[100vw] flex justify-between z-30 p-8 pr-11 items-start'>
             <div className='text-white'>
-                <Image src={'/logo.png'} height={100} width={100} alt='logo'>
+                <Link href='/'>
+                    <Image src={'/logo.png'} height={100} width={100} alt='logo'>
 
-                </Image>
+                    </Image>
+                </Link>
             </div>
             <ul className='list-none text-white flex gap-11 font-bold'>
-                <li>Home</li>
-                <li>Threats</li>
+                <li>
+                    <Link href='/'>
+                        Home
+                    </Link>
+                </li>
+                <li><Link href='/threats'>
+                    Threats
+                </Link>
+                </li>
                 <li>Solutions</li>
                 <li>About us</li>
             </ul>
