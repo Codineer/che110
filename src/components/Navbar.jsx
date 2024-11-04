@@ -21,7 +21,11 @@ const Navbar = () => {
                     Threats
                 </Link>
                 </li>
-                <li>Solutions</li>
+                <li>
+                    <Link href='/solutions'>
+                        Solutions
+                    </Link>
+                </li>
 
                 <li>
                     <Link href='/aboutus'>
